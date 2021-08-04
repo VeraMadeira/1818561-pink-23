@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+<head>
+  <meta charset="UTF-8">
+  <title>Приложение для раскрашивания «Пинк»</title>
+</head>
+<body class="page__body">
+  <header class="page-header">
+    <a class="page-header__logo">
+      <img src="img/logotype-mobile.svg" width="74" height="23" alt="Логотип приложения «Пинк»">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a>
+              Главная
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="catalog.html">
+              Фотографии
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="form.html">
+              Записаться
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">
+              HTML Academy
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="page-main">
+    <h1>Конкурс на самое безбашенное путешествие с Пинк</h1>
+    <section class="competition">
+      <h2>Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</h2>
+      <div class="competition__wrapper">
+        <div class="competition__form">
+          <form method="get" action="https://echo.htmlacademy.ru">
+            <fieldset>
+              <legend class="visually-hidden">Как вас зовут:</legend>
+              <ul>
+                <li class="competition__form-name">
+                  <label for="appointment-surname">Фамилия:</label>
+                  <input type="text" name="surname" id="appointment-surname" placeholder="Укажите фамилию*">
+                </li>
+                <li class="competition__form-name">
+                  <label for="appointment-name">Имя:</label>
+                  <input type="text" name="name" id="appointment-name" placeholder="Введите ваше имя*">
+                </li>
+                <li class="competition__form-name">
+                  <label for="appointment-patronymic">Отчество:</label>
+                  <input type="text" name="patronymic" id="appointment-patronymic" placeholder="Ну и отчество тоже">
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset>
+              <legend>Ваши безбашенные достижения в путешествии</legend>
+              <ul>
+                <li class="competition__form-progress">
+                  <input type="checkbox" name="selfie" id="filter-selfie" checked>
+                  <label for="filter-selfie">Сделал селфи с акулой</label>
+                </li>
+                <li class="competition__form-progress">
+                  <input type="checkbox" name="beach" id="filter-beach" checked>
+                  <label for="filter-beach">Обгорел на пляже</label>
+                </li>
+                <li class="competition__form-progress">
+                  <input type="checkbox" name="norris" id="filter-norris">
+                  <label for="filter-norris">Видел Чака Норриса</label>
+                </li>
+                <li class="competition__form-progress">
+                  <input type="checkbox" name="souvenirs" id="filter-souvenirs">
+                  <label for="filter-souvenirs">Накупил сувениров</label>
+                </li>
+                <li class="competition__form-progress">
+                  <input type="checkbox" name="tower" id="filter-tower" checked>
+                  <label for="filter-tower">Удержал башню</label>
+                </li>
+                <li class="competition__form-progress">
+                  <input type="checkbox" name="hotel" id="filter-hotel">
+                  <label for="filter-hotel">Разгромил отель</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset>
+              <legend class="visually-hidden">Как с вами связаться:</legend>
+              <ul>
+                <li class="competition__form-connect">
+                  <label for="appointment-phone">Номер телефона</label>
+                  <input type="text" name="phone" id="appointment-phone" placeholder="Номер, пожалуйста">
+                </li>
+                <li class="competition__form-connect">
+                  <label for="appointment-mail">Адрес почты</label>
+                  <input type="text" name="mail" id="appointment-mail" placeholder="Введите почту *">
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset>
+              <legend>С каким приложением путешествовали?</legend>
+              <ul>
+                <li class="competition__form-app">
+                  <input type="radio" name="iOS" id="filter-iOS" checked>
+                  <label for="filter-iOS">Pink для iOS</label>
+                </li>
+                <li class="competition__form-app">
+                  <input type="radio" name="android" id="filter-android">
+                  <label for="filter-android">Pink на Android</label>
+                </li>
+                <li class="competition__form-app">
+                  <input type="radio" name="windows" id="filter-windows">
+                  <label for="filter-windows">Windows Phone</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset>
+              <legend class="visually-hidden">Поле для вашего текста впечатлений:</legend>
+              <ul>
+                <li class="competition__form-description">
+                  <label for="appointment-description">ОПИШИТЕ СВОИ ЭМОЦИИ</label>
+                  <input type="text" name="description" id="appointment-description" placeholder="Можно прям в красках, не стесняясь в выражениях">
+                </li>
+              </ul>
+            </fieldset>
+            <button type="submit" class="competition__form-description-button">Отправить форму</button>
+            <p>* — обязательные поля</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <div class="page-footer__logo">
+        <a class="page-footer__logo-image">
+          <img src="img/logotype-blue-tablet.png" width="146" height="40" alt="Логотип приложения «Пинк»">
+        </a>
+      </div>
+      <section class="page-footer__social social">
+        <h2 class="visually-hidden">Социальные сети</h2>
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy">Твиттер</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Фейсбук</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="https://www.instagram.com/htmlacademy">Ютуб</a>
+          </li>
+        </ul>
+      </section>
+      <div class="page-footer__copyright">
+        <div class="page-footer__copyright copyright">
+          <p class="copyright__text">Разработано:</p>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <section class="modal-error">
+    <h2>Что-то пошло не так!</h2>
+    <p class="modal-error__message">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+    <button class="modal-error__message-button" type="submit">Ок</button>
+  </section>
+  <section class="modal-accept">
+    <h2>Ваша заявка отправлена</h2>
+    <p class="modal-accept__message">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
+    <button class="modal-accept__message-button" type="submit">ЗАКРЫТЬ ОКНО</button>
+  </section>
+</body>
+</html>
